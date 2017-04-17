@@ -1,35 +1,48 @@
 # koa2-demo
 
-基于 [koa2](https://github.com/koajs/koa)。
+[中文文档](https://github.com/easy-templates/koa2-demo/blob/master/README_CN.md)
 
-数据库使用mysql，通过[mysql](https://github.com/mysqljs/mysql)以及[co-mysql](https://github.com/coderhaoxin/co-mysql)实现数据库连接。
+[koa2](https://github.com/koajs/koa) example。
 
-视图使用[koa-views](https://github.com/queckezz/koa-views)以及[ejs](https://github.com/mde/ejs)进行渲染。
+## Tech Stack
 
-路由处理使用[koa-router](https://github.com/alexmingoia/koa-router)。
+- koa2
+- mysql
+- co-mysql
+- koa-views
+- ejs
+- koa-router
+- gulp
+- nodemon
+- browserSync
 
-## Tech Stack 技术栈
+## Features
 
-* koa2
-* mysql
-* co-mysql
-* koa-views
-* koa-router
+Currently contains user and user pages, page shows the database query to the user information。
 
-## 文件说明
+## Quickstart
 
-## Getting Start
-
-##### Development environment：
-开发环境
+### Installation
 
 ```
-git clone git@github.com:babeliao/koa2-starter.git
-cd koa2-starter
-npm install
-npm start
+$ git clone git@github.com:easy-templates/koa2-demo.git
+$ npm i
 ```
 
-open in browser
+### Usage
 
-http://127.0.0.1:3200/  
+```
+$ npm run start
+```
+
+## Contribution
+
+Please make sure to read the Contributing Guide before making a pull request.
+
+## Feedback
+
+If you encounter any problems , submit [issues](https://github.com/easy-templates/koa2-demo/issues)。
+
+## Licence
+
+[MIT](https://github.com/easy-templates/koa2-demo/blob/master/LICENSE)

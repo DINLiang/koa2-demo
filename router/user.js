@@ -5,7 +5,7 @@ const server = new dbServer();
 
 router.get('/:code', async function(ctx, next) {
     // 对应 url
-    // http://localhost:3200/user/lyk
+    // http://localhost:3200/user/liuyk
     var code = ctx.params.code;
     var rows = await server.query('user', '*', 'code = \'' + code + '\'');
     await next();
@@ -21,14 +21,18 @@ router.get('/:code', async function(ctx, next) {
 router.get('/', async function(ctx, next) {
     // 对应url
     // http://localhost:3200/user?id=1
-    // http://localhost:3200/user?code=lyk
+    // http://localhost:3200/user?code=liuyk
+    // 根据id或者code进行查询,否则查询所有
     var code = ctx.request.query.code;
-    var rows = []
-    if (code)
-        var rows = await server.query('user', '*', 'code = \'' + code + '\'');
     var id = ctx.request.query.id;
-    if (id)
+    var rows = []
+    if (id) {
         var rows = await server.query('user', '*', 'id = ' + id);
+    } else if (code) {
+        var rows = await server.query('user', '*', 'code = \'' + code + '\'');
+    } else {
+        var rows = await server.query('user', '*');
+    }
     ctx.state = {
         users: rows
     }

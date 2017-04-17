@@ -1,12 +1,15 @@
 {
   "name": "koa2-demo",
   "version": "1.0.0",
-  "description": "基于koa的实践",
+  "description": "基于koa2 + mysql + ejs + gulp + nodemon +browserSync 的实践",
   "main": "app.js",
   "dependencies": {
+    "browser-sync": "^2.18.8",
     "co": "^4.6.0",
     "co-mysql": "^1.0.0",
     "ejs": "^2.5.6",
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.2.1",
     "koa": "^2.2.0",
     "koa-bodyparser": "^4.2.0",
     "koa-convert": "^1.2.0",
@@ -20,7 +23,9 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node app.js"
+    "start": "gulp server",
+    "productStart": "gulp server --nodeEnv production",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 "
   },
   "repository": {
     "type": "git",
