@@ -18,6 +18,7 @@ const app = new koa();
 // app.use(bodyparser);
 // app.use(convert(json()));
 // app.use(convert(logger()));
+app.use(require('koa-static')(__dirname + config.static_path)); // 指定静态资源路径
 // 设置模板
 app.use(views(__dirname + config.view_path, {
   extension: 'ejs'

@@ -8,6 +8,8 @@
 
 视图使用[koa-views](https://github.com/queckezz/koa-views)以及[ejs](https://github.com/mde/ejs)进行渲染。
 
+通过[koa-static](https://github.com/koajs/static)来引入静态资源，指定静态资源路径。
+
 路由处理使用[koa-router](https://github.com/alexmingoia/koa-router)。
 
 使用[gulp](https://github.com/gulpjs/gulp) + [nodemon](https://github.com/remy/nodemon) （自动重启node服务） + [browserSync](https://github.com/npm/security-holder) （处理静态文件改变后刷新浏览器）来实现文件改变之后重启服务并刷新浏览器。
@@ -18,6 +20,7 @@
 - mysql
 - co-mysql
 - koa-views
+- koa-static
 - ejs
 - koa-router
 - gulp
@@ -34,6 +37,7 @@
 
 ```
 $ git clone git@github.com:easy-templates/koa2-demo.git
+$ cd koa2-demo
 $ npm i
 ```
 

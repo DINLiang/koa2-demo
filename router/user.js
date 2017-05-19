@@ -16,7 +16,7 @@ router.get('/:code', async function(ctx, next) {
     await ctx.render('user', {});
 }, async function(ctx, next) {
     console.log('next fun');
-})
+});
 
 router.get('/', async function(ctx, next) {
     // 对应url

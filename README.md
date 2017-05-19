@@ -12,6 +12,7 @@
 - koa-views
 - ejs
 - koa-router
+- koa-static
 - gulp
 - nodemon
 - browserSync
@@ -26,6 +27,7 @@ Currently contains user and user pages, page shows the database query to the use
 
 ```
 $ git clone git@github.com:easy-templates/koa2-demo.git
+$ cd koa2-demo
 $ npm i
 ```
 
