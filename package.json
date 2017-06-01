@@ -1,7 +1,7 @@
 {
   "name": "koa2-demo",
   "version": "1.0.0",
-  "description": "基于koa2 + mysql + ejs + gulp + nodemon +browserSync 的实践",
+  "description": "基于koa2 + mysql + ejs + gulp + nodemon + browserSync 的实践",
   "main": "app.js",
   "dependencies": {
     "browser-sync": "^2.18.8",
