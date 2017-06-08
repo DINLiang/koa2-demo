@@ -1,9 +1,7 @@
-// 添加引用
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 var nodemon = require('gulp-nodemon');
-
 var uglify = require('gulp-uglify');
 var cleancss = require('gulp-clean-css')
 var rev = require('gulp-rev');
